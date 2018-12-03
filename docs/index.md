@@ -1,9 +1,13 @@
-[1]: http://blog.travelmarx.com/2017/12/a-personal-information-management-system-introducing-scrapbook.html
-[2]: http://www.travelmarx.com/
-[3]: https://visualstudio.microsoft.com/downloads/
-[4]: https://docs.microsoft.com/en-us/azure/cosmos-db/local-emulator
-[5]: http://todomvc.com/
-[6]: https://www.asp.net/mvc
+## Contents
+
+- [Introduction](#introduction)
+  * [Run locally](#run-locally)
+  * [Run live](#run-live)
+  * [Try this sample](#try-this-sample)
+- [Technology Overview](technology-overview)
+  * [NoSQL](technology-overview#nosql)
+  * [MVC](technology-overview#mvc)
+ - [Prototype document](prototype-document)
 
 # Introduction
 
@@ -14,6 +18,8 @@ document pages and code provide a concrete template for building your own Scrapb
 you up and going.
 
 If you don't feel like running this code and just want to see it in action, a running sample version of this code with sample data is provided here [TBD][2].
+
+These docs are a work in progress. :runner:
 
 ## Run locally
 
@@ -38,15 +44,9 @@ Clone this repository
 git clone https://github.com/travelmarx/scrapbook
 ```
 
-## TOC
-
-- [Introduction](#introduction)
-  * [Run locally](#run-locally)
-  * [Run live](#run-live)
-  * [Try this sample](#try-this-sample)
-- [Technology Overview](technology-overview)
-  * [NoSQL](technology-overview#nosql)
-  * [MVC](technology-overview#mvc)
- - [Prototype document](prototype-document)
-
-
+[1]: http://blog.travelmarx.com/2017/12/a-personal-information-management-system-introducing-scrapbook.html
+[2]: http://www.travelmarx.com/
+[3]: https://visualstudio.microsoft.com/downloads/
+[4]: https://docs.microsoft.com/en-us/azure/cosmos-db/local-emulator
+[5]: http://todomvc.com/
+[6]: https://www.asp.net/mvc
