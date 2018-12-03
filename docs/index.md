@@ -8,7 +8,7 @@ you up and going.
 
 If you don't feel like running this code and just want to see it in action, a running sample version of this code with sample data is provided here [TBD][2].
 
-# What's Needed 
+## Required
 
 We build this using using Microsoft tools and software. You can get started with not cost to you with the following software running locally:
 
@@ -23,6 +23,12 @@ When you have played around locally and you want to take the next step by publis
 The Scrapbook 101 code was build by starting with the perennial to-do list app and customizing it.
 
 # TOC
+
+- [Introduction](#introduction)
+  * ## [Required](#required)
+- [Technology Overview](#technology-overview)
+  * ## [NoSQL](#nosql)
+  * ## [MVC](#mvc)
 
 
 [1]: http://blog.travelmarx.com/2017/12/a-personal-information-management-system-introducing-scrapbook.html
