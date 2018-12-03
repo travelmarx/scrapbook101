@@ -6,7 +6,7 @@ encapsulate and encode data (or information) in some standard format or encoding
 
 Design here is model-first approach meaning we start with a prototype document that represents one Scrapbook item.
 
-```
+```json
 {
     "id": "8bb3e432-0705-4cbc-99d4-b22853a8bc4b",
     "type": "scrapbook101Item",
