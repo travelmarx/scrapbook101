@@ -17,25 +17,27 @@ In that post we talk about the ideas behind building our own personal informatio
 document pages and code provide a concrete template for building your own Scrapbook application. It's sort of a Scrapbook 101 app to get
 you up and going.
 
+The Scrapbook 101 code was build by starting with the [ASP.NET MVC][6] To-Do List app and customizing it. We choose the [ASP.NET MVC][6] but there are many other ways to implement what we have here. For example, see the site [ToDo List][5] shows many MVC implementations using JavaScript web apps.
+
 If you don't feel like running this code and just want to see it in action, a running sample version of this code with sample data is provided here [TBD][2].
 
 These docs are a work in progress. :runner:
 
 ## Run locally
 
-We build this using using Microsoft tools and software. You can get started with not cost to you with the following software running locally:
+You can build this sample using using Microsoft tools and software locally, with not cost to you with the following:
 
 * [Visual Studio Community][3]
 * [Azure Cosmos DB Local Emulator][4]
 
 ## Run live
 
-When you have played around locally and you want to take the next step by publishing your site live, you would add the following pieces:
+If you have tried it locally, the next step by publishing your site live with the following services:
 
 * Azure Cosmos DB Service
+ ** Works the same as local and you can copy any work locally to the live service.
 * Azure Application Service
-
-The Scrapbook 101 code was build by starting with the [ASP.NET MVC][6] To-Do List app and customizing it. We choose the [ASP.NET MVC][6] but there are many other ways to implement what we have here. For example, see the site [ToDo List][5] shows many MVC implementations using JavaScript web apps.
+ ** Publish directly from Visual Studio to the Azure Application service.
 
 ## Try this sample
 
