@@ -2,6 +2,8 @@
 [2]: http://www.travelmarx.com/
 [3]: https://visualstudio.microsoft.com/downloads/
 [4]: https://docs.microsoft.com/en-us/azure/cosmos-db/local-emulator
+[5]: http://todomvc.com/
+[6]: https://www.asp.net/mvc
 
 # Introduction
 
@@ -25,7 +27,7 @@ When you have played around locally and you want to take the next step by publis
 * Azure Cosmos DB Service
 * Azure Application Service
 
-The Scrapbook 101 code was build by starting with the perennial to-do list app and customizing it.
+The Scrapbook 101 code was build by starting with the [ASP.NET MVC][6] To-Do List app and customizing it. We choose the [ASP.NET MVC][6] but there are many other ways to implement what we have here. For example, see the site [ToDo List][5] shows many MVC implementations using JavaScript web apps.
 
 ## TOC
 
