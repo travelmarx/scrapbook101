@@ -1,7 +1,7 @@
 # Introduction
 
 These docs are the how-to part of the blog post 
-[A Personal Information Management System: Introducing Scrapbook](http://blog.travelmarx.com/2017/12/a-personal-information-management-system-introducing-scrapbook.html).
+[A Personal Information Management System: Introducing Scrapbook][1].
 In that post we talk about the ideas behind building our own personal information management system (PIM), that we call Scrapbook. These
 document pages and code provide a concrete template for building your own Scrapbook application. It's sort of a Scrapbook 101 app to get
 you up and going.
@@ -21,3 +21,6 @@ When you have played around locally and you want to take the next step by publis
 * Azure Application Service
 
 The Scrapbook 101 code was build by starting with the perennial to-do list app and customizing it.
+
+[1]: http://blog.travelmarx.com/2017/12/a-personal-information-management-system-introducing-scrapbook.html
+[2]: 
