@@ -31,8 +31,9 @@ The Scrapbook 101 code was build by starting with the perennial to-do list app a
 
 - [Introduction](#introduction)
   * [Required](#required)
-- [Technology Overview](#technology-overview)
-  * [NoSQL](#nosql)
-  * [MVC](#mvc)
+- [Technology Overview](technology-overview)
+  * [NoSQL](technology-overview#nosql)
+  * [MVC](technology-overview#mvc)
+ - [Prototype Document](prototype-document)
 
 
