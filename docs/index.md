@@ -1,3 +1,8 @@
+[1]: http://blog.travelmarx.com/2017/12/a-personal-information-management-system-introducing-scrapbook.html
+[2]: http://www.travelmarx.com/
+[3]: https://visualstudio.microsoft.com/downloads/
+[4]: https://docs.microsoft.com/en-us/azure/cosmos-db/local-emulator
+
 # Introduction
 
 These docs are the how-to part of the blog post 
@@ -22,16 +27,12 @@ When you have played around locally and you want to take the next step by publis
 
 The Scrapbook 101 code was build by starting with the perennial to-do list app and customizing it.
 
-# TOC
+## TOC
 
 - [Introduction](#introduction)
-  * ## [Required](#required)
+  * [Required](#required)
 - [Technology Overview](#technology-overview)
-  * ## [NoSQL](#nosql)
-  * ## [MVC](#mvc)
+  * [NoSQL](#nosql)
+  * [MVC](#mvc)
 
 
-[1]: http://blog.travelmarx.com/2017/12/a-personal-information-management-system-introducing-scrapbook.html
-[2]: 
-[3]: https://visualstudio.microsoft.com/downloads/
-[4]: https://docs.microsoft.com/en-us/azure/cosmos-db/local-emulator
