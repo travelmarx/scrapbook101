@@ -15,12 +15,14 @@ you up and going.
 
 If you don't feel like running this code and just want to see it in action, a running sample version of this code with sample data is provided here [TBD][2].
 
-## Required
+## Run locally
 
 We build this using using Microsoft tools and software. You can get started with not cost to you with the following software running locally:
 
 * [Visual Studio Community][3]
 * [Azure Cosmos DB Local Emulator][4]
+
+## Run live
 
 When you have played around locally and you want to take the next step by publishing your site live, you would add the following pieces:
 
@@ -29,13 +31,22 @@ When you have played around locally and you want to take the next step by publis
 
 The Scrapbook 101 code was build by starting with the [ASP.NET MVC][6] To-Do List app and customizing it. We choose the [ASP.NET MVC][6] but there are many other ways to implement what we have here. For example, see the site [ToDo List][5] shows many MVC implementations using JavaScript web apps.
 
+## Try this sample
+
+Clone this repository
+```bash
+git clone https://github.com/travelmarx/scrapbook
+```
+
 ## TOC
 
 - [Introduction](#introduction)
-  * [Required](#required)
+  * [Run locally](#run-locally)
+  * [Run live](#run-live)
+  * [Try this sample](#try-this-sample)
 - [Technology Overview](technology-overview)
   * [NoSQL](technology-overview#nosql)
   * [MVC](technology-overview#mvc)
- - [Prototype Document](prototype-document)
+ - [Prototype document](prototype-document)
 
 
