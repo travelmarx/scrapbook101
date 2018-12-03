@@ -10,7 +10,7 @@ If you don't feel like running this code and just want to see it in action, a ru
 
 # What's Needed 
 
-We build this using using Microsoft tools and software. You can get started with not cost to you with the following:
+We build this using using Microsoft tools and software. You can get started with not cost to you with the following software running locally:
 
 * [Visual Studio Community](https://visualstudio.microsoft.com/downloads/)
 * [Azure Cosmos DB Local Emulator](https://docs.microsoft.com/en-us/azure/cosmos-db/local-emulator)
