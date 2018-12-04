@@ -1,8 +1,8 @@
 toc:
-  - url: index
-    title: Introduction
-  - url: get-started
-    title: Get Started
+  - title: Introduction
+    url: index
+  - title: Get Started
+    url: get-started
     sections:
       - heading: run-local
         title: Run local
