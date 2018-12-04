@@ -21,7 +21,14 @@ The Scrapbook 101 code was build by starting with the [ASP.NET MVC][6] To-Do Lis
 
 If you don't feel like running this code and just want to see it in action, a running sample version of this code with sample data is provided here [TBD][2].
 
-These docs are a work in progress. :runner:
+View all the docs as a website at https://travelmarx.github.io/scrapbook/.
+
+## Try this sample
+
+Clone this repository
+```bash
+git clone https://github.com/travelmarx/scrapbook
+```
 
 ## Run locally
 
@@ -39,13 +46,8 @@ If you have tried it locally, the next step by publishing your site live with th
 * Azure Application Service
  ** Publish directly from Visual Studio to the Azure Application service.
 
-## Try this sample
 
-Clone this repository
-```bash
-git clone https://github.com/travelmarx/scrapbook
-```
-
+[0]: https://travelmarx.github.io/scrapbook/
 [1]: http://blog.travelmarx.com/2017/12/a-personal-information-management-system-introducing-scrapbook.html
 [2]: http://www.travelmarx.com/
 [3]: https://visualstudio.microsoft.com/downloads/
