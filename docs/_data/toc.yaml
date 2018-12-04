@@ -1,6 +1,10 @@
-- url: index.md
-  title: Introduction
-  group: navigation
-- url: get-started.md
-  title: Get Started
-  group: navigation
+toc:
+  - url: index
+    title: Introduction
+  - url: get-started
+    title: Get Started
+    sections:
+      - heading: run-local
+        title: Run local
+      - heading: run-live
+        title: Run live
