@@ -28,9 +28,12 @@
         <ul class="nav">
           {% assign pages_list = site.pages %}
           {% assign group = 'navigation' %}
+          {% for node in pages_list %}
+            <li><a href="{{node.url}}">{{node.title}}</a></li>
+          {% endfor %}
         </ul>
         
-        <p class="view">Site last generated on <br/> {{ site.time | date_to_string }}.</p>
+        <p class="view">Site last generated on {{ site.time | date_to_string }}.</p>
 
         {% if site.github.is_user_page %}
         <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
