@@ -8,7 +8,7 @@ Here we describe the path we took to build the Scrapbook 101 app, which is on Wi
 
 After starting the local emulator, there is an option to download code samples you can start from.
 
-![Alt text](/images/where-to-get-samples.jpg "Getting samples in Cosmos Local Emulator")
+![Alt text](/docs/images/where-to-get-samples.jpg "Getting samples in Cosmos Local Emulator")
 
 ## Run live
 
