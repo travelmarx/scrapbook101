@@ -23,10 +23,10 @@
  
         <ul class="nav">
           {% for item in site.data.toc.toc %}
-          <li><a href="#{{item.url}}">{{item.title}}</a>
+          <li><a href="{{item.url}}">{{item.title}}</a>
               <ul>
               {% for entry in item.sections %}
-                <li><a href="#{{entry.heading}}">{{entry.title}}</a></li>
+                <li><a href="{{item.url}}#{{entry.heading}}">{{entry.title}}</a></li>
               {% endfor %}
               </ul>
             </li>
