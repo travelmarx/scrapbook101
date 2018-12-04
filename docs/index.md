@@ -1,6 +1,7 @@
 ## Contents
 
 - [Introduction](#introduction)
+
 - [Get Started](get-started)  
   * [Run locally](get-started#run-locally)
   * [Run live](get-started#run-live)
@@ -8,6 +9,9 @@
   * [NoSQL](technology-overview#nosql)
   * [MVC](technology-overview#mvc)
 - [Prototype Document](prototype-document)
+	* [Overview](prototype-docmument#overview)
+	* [Description of fields](prototype-document#description-of-fields)
+
 
 # Introduction
 
