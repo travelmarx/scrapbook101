@@ -1,15 +1,12 @@
 ## Contents
 
 - [Introduction](#introduction)
-
-- [Get Started](../docs/get-started)  
+- [Get Started](get-started)  
   * [Run locally](get-started#run-locally)
   * [Run live](get-started#run-live)
-
 - [Technology Overview](technology-overview)
   * [NoSQL](technology-overview#nosql)
   * [MVC](technology-overview#mvc)
-
 - [Prototype Document](prototype-document)
 
 # Introduction
