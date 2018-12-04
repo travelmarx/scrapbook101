@@ -23,7 +23,7 @@ you up and going.
 
 To see an example of this code in action, go to [TBD][demo]. Note that this is still a work in progress. :runner:
 
-{{site.time}}
+This site last generated on {{site.time}}.
 
 [web]: https://travelmarx.github.io/scrapbook/
 [blog]: http://blog.travelmarx.com/2017/12/a-personal-information-management-system-introducing-scrapbook.html
