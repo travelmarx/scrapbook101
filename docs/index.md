@@ -1,7 +1,6 @@
 ## Contents
 
 - [Introduction](#introduction)
-  * [Try this sample](#try-this-sample)
 - [Get started](#get-started)  
   * [Run locally](#run-locally)
   * [Run live](#run-live)
@@ -19,8 +18,6 @@ document pages and code provide a concrete template for building your own Scrapb
 you up and going.
 
 To see an example of this code in action, go to [TBD][demo]. View all the docs as a website at https://travelmarx.github.io/scrapbook/.
-
-## Try this sample
 
 Clone this repository
 ```bash
