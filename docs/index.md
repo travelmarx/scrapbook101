@@ -1,10 +1,10 @@
 ## Contents
 
 - [Introduction](#introduction)
+  * [Try this sample](#try-this-sample)
+- [Get started](#get-started)  
   * [Run locally](#run-locally)
   * [Run live](#run-live)
-  * [Try this sample](#try-this-sample)
-- [  
 - [Technology Overview](technology-overview)
   * [NoSQL](technology-overview#nosql)
   * [MVC](technology-overview#mvc)
@@ -18,9 +18,7 @@ In that post we talk about the ideas behind building our own personal informatio
 document pages and code provide a concrete template for building your own Scrapbook application. It's sort of a Scrapbook 101 app to get
 you up and going.
 
-To see an example of this code in action, go to [TBD][demo].
-
-View all the docs as a website at https://travelmarx.github.io/scrapbook/.
+To see an example of this code in action, go to [TBD][demo]. View all the docs as a website at https://travelmarx.github.io/scrapbook/.
 
 ## Try this sample
 
