@@ -1,4 +1,5 @@
-#custhead {
-width: 270px;
-float: left;
+.custhead 
+{
+  width: 270 px;
+  float: left;
 }
