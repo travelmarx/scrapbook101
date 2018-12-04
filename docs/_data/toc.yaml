@@ -4,7 +4,7 @@ toc:
   - title: Get Started
     url: get-started
     sections:
-      - heading: run-local
-        title: Run local
-      - heading: run-live
-        title: Run live
+      - title: Run local
+        heading: run-local
+      - title: Run live
+        title: run-live
