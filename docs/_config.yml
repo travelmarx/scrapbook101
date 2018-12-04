@@ -1,10 +1,11 @@
-theme: jekyll-theme-minimal
-highligher: rouge
-title: Travelmarx Scrapbook 101
 author:
   name: Travelmarx
   email: travelmarx@live.com
   github: travelmarx
-production_url: https://travelmarx.github.io/scrapbook/
+highligher: rouge
+markdown: kramdown
+theme: jekyll-theme-minimal
 plugins:
   - jemoji
+production_url: https://travelmarx.github.io/scrapbook/
+title: Travelmarx Scrapbook 101
