@@ -23,12 +23,13 @@
  
         <ul class="nav">
           {% for item in site.data.toc.toc %}
-            <h3>{{item.title}}</h3>
-            <ul>
-            {% for entry in item.sections %}
-            <li>{{entry.title}}</li>
-            {% endfor %}
-            </ul>
+            <li>{{item.title}}
+              <ul>
+              {% for entry in item.sections %}
+              <li>{{entry.title}}</li>
+              {% endfor %}
+              </ul>
+            </li>
           {% endfor %}
         </ul>
 
