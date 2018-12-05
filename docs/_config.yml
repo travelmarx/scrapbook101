@@ -7,5 +7,5 @@ markdown: kramdown
 theme: jekyll-theme-minimal
 plugins:
   - jemoji
-production_url: https://travelmarx.github.io/scrapbook/
+production_url: https://travelmarx.github.io/scrapbook101/
 title: Travelmarx Scrapbook 101
