@@ -8,7 +8,7 @@ you up and going.
 
 To see an example of this code in action, go to [TBD][demo]. Note that this is still a work in progress. :runner:
 
-[web]: https://travelmarx.github.io/scrapbook/
+[web]: https://travelmarx.github.io/scrapbook101/
 [blog]: http://blog.travelmarx.com/2017/12/a-personal-information-management-system-introducing-scrapbook.html
 [demo]: http://www.travelmarx.com/
 
