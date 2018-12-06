@@ -1,3 +1,6 @@
+---
+layout: default
+---
 [docdb]: https://en.wikipedia.org/wiki/Document-oriented_database
 
 # Overview

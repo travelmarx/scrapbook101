@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 ## Run locally
 
 Webuild the Scrapbook 101 app on Winddows with the following tools.

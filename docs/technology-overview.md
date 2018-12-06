@@ -1,3 +1,6 @@
+---
+layout: default
+---
 # Technology Overview
 
 The Scrapbook 101 code was build starting with the [ASP.NET MVC][aspmvc] To-Do List app and customizing it. After success

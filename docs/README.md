@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Travelmarx Scrapbook 101
 
 These docs are the how-to part of the blog post 

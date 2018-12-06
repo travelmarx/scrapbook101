@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Introduction
 
 These docs are the how-to part of the blog post 
