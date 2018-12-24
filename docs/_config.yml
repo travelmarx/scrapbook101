@@ -8,9 +8,4 @@ plugins:
   - jemoji
 production_url: https://travelmarx.github.io/scrapbook101/
 title: Travelmarx Scrapbook 101
-<<<<<<< HEAD
 sn: Scrapbook101
-=======
-
-theme: jekyll-theme-minimal
->>>>>>> ed9c61d69145fe0b4080c5fb208fbb7e024ed04d
