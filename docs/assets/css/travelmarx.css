@@ -1,9 +1,38 @@
 .custhead 
 {
-  width: 270px;
+  width: 250px;
   float: left;
 }
 .custhead ul 
 {
   margin: 0 0 5px;
+}
+.custwrapper
+{
+  width: 900px;
+}
+.custmain
+{
+  width: 560px;
+}
+.deflist li
+{
+  list-style: none;
+}
+.deflist ul
+{
+  margin: 4px;
+}
+.deflist p
+{
+  padding-top: 10px;
+}
+.subdeflist
+{
+  margin-left: 15px;
+}
+.custfoot
+{
+  position: static;
+  float: none;
 }

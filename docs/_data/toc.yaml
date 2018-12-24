@@ -1,6 +1,11 @@
 toc:
   - title: Introduction
     url: index
+    sections:
+      - title: A brief recap
+        heading: a-brief-recap
+      - title: Why this site?
+        heading: why-this-site
   - title: Get Started
     url: get-started
     sections:
@@ -13,12 +18,59 @@ toc:
     sections:
       - title: NoSQL
         heading: nosql
+        sections:
+          - title: Document-oriented
+            heading: document-oriented
+          - title: CRUD
+            heading: crud
+          - title: Origins
+            heading: origins
       - title: MVC
         heading: mvc
-  - title: Prototype Document
-    url: prototype-document
+      - title: Geocode
+        heading: geocode
+  - title: Item Document
+    url: item-document
     sections:
       - title: Overview
         heading: overview
       - title: Description of fields
         heading: description-of-fields
+      - title: JSON Schema
+        heading: json-schema
+  - title: Category Document
+    url: category-document
+    sections:
+      - title: Overview
+        heading: overview
+      - title: Description of fields
+        heading: description-of-fields
+  - title: Code Discussion
+    url: code-discussion
+    sections:
+      - title: Categories
+        heading: categories
+      - title: Models
+        heading: models
+      - title: Security
+        heading: security
+      - title: Import Data
+        heading: import-data
+      - title: Searching
+        heading: searching
+      - title: Styling
+        heading: styling
+  - title: Handling Assets
+    url: handling-assets
+    sections:
+      - title: Overview
+        heading: overview
+      - title: Asset Organization
+        heading: asset-organization
+  - title: About This Site
+    url: about-this-site
+    sections:
+      - title: Starting off
+        heading: starting-off
+      - title: Running locally
+        heading: running-locally
