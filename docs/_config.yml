@@ -9,3 +9,4 @@ plugins:
 production_url: https://travelmarx.github.io/scrapbook101/
 title: Travelmarx Scrapbook 101
 sn: Scrapbook101
+theme: jekyll-theme-minimal 
