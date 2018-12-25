@@ -32,7 +32,16 @@ What happened on startup:
 * A [category document][cat] was created and stored in the document store. The category information was read from the file `App_data/categories-document.json`.
 * If **addTestAssets** was set to `true` test {{site.sn}} items were added to the document store as well. They were read from the file `App_Data/test-documents.json`.
 
+## Create an item
+
 At this point, you can start working with {{site.sn}} items with CRUD (create, read, update, delete) operations. The home page is https://localhost:port#/ or https://localhost:port#/Item/Index.
+
+To create a new {{site.sn}} item.
+
+1. On the home page, select **Create**.
+2. Choose a category in the **Category** dropdown.
+3. Fill in the **Title** field.
+4. Select **Save** or continue to fill in fields.
 
 ## Run live
 

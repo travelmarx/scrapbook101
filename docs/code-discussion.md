@@ -70,7 +70,8 @@ If you run {{site.sn}} locally and start to add entries and then decide to go-li
 
 ## Searching
 
-The search functionality implemented in {{site.sn}} allows for searching titles for a contained string fragment. In the `ItemController.cs` file the `SearchAsync` method includes the line using [LINQ][linq]:
+The search functionality implemented in {{site.sn}} allows searching titles for a string fragment. The code to do
+this is in the `ItemController.cs` file's `SearchAsync` method, which uses [LINQ][linq]:
 
 ```C#
 var items = await DocumentDBRepository<Item>.GetItemsAsync(
@@ -88,7 +89,10 @@ var items = await DocumentDBRepository<Item>.GetItemsAsync(
 
 ## Styling
 
-The create, delete, update, and edit pages (under the `Views\Item` folder) are styled minimally. They can be improved and rearranged as needed. In contrast, the {{site.sn}} main page (`Views\Item\Index.cshtml`) is style using [Bootstrap][boot] to demonstrate one way of viewing data using Bootstrap [cards][bootcard] and showing one asset image if it exists or else show a default image as specified in the `web.config` file.
+The create, delete, update, and edit pages (under the `Views\Item` folder) are styled minimally. They can be improved and rearranged as needed. In contrast, the {{site.sn}} main page (`Views\Item\Index.cshtml`) is styled using [Bootstrap][boot] to demonstrate one way of viewing data using Bootstrap [cards][bootcard] and showing one asset image if it exists or else show a default image as specified in the `web.config` file.  
+
+All the scripts for styling are injected in the `Views\Shared\__Layout.cshtml`. A more typical approach is to bundle
+the scripts together and include them in the `App_Start\BundleConfig.cs`.
 
 ## Paging
 

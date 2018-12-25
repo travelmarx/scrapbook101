@@ -7,7 +7,11 @@ layout: default
 
 One obvious question is if assets (images, documents, etc.) are needed? They add a level of complexity to the code that is significant. We would argue that the assets, especially images, are important for the Scrapbook because visually interacting with data is pleasing and simpler. Agreeing that assets are important, the question become how to upload assets and where to store them.
 
-Running locally, assets could be a folder in the local file system, e.g. `C:\Assets`. In the version of {{site.sn}} we use the `Assets` folder that is part of the Visual Studio solution because it makes demonstation easier. However, this approach isn't practical or recommended. Furthermore, the {{site.sn}} application allows basic handling of assets only through browser, uploading and deleting, using the [HTML File Upload Object][htmlfile]. In practice, you might need renaming and other file manipulation code - all of which adds more complexity to the code.
+Running locally, assets can be stored in a folder on the local file system, e.g. `C:\Assets`. In the version of {{site.sn}} we use the `Assets` folder that is part of the Visual Studio solution because it makes demonstation easier. However, this approach isn't practical or recommended. 
+
+> The {{site.sn}} application allows basic handling of assets through browser, including adding assets in the
+> create operation using the [HTML File Upload Object][htmlfile] and deleting assets in the edit operation. 
+> In practice, you will need more renaming and file manipulation code.
 
 You could use any document storage servies or blob storage service to store assets. In this case, you would add connection keys to the `web.config` and use them in the `ItemController.cs` code when creating or editing items. In the Scrapbook version described in our [blog post][blog], assets can be uploaded locally with the [HTML File Upload Object][htmlfile] or from OneDrive using the [OneDrive REST API][onedriverest]. Regardless of where the assets originate, they are stored permanently in [Microsoft Azure Blob Storage][blob].
 

@@ -3,4 +3,9 @@ _site
 .sass-cache
 Gemfile.lock
 *.gem
+packages
+.git
+.vs
+**/src/bin
+**/src/obj
 
