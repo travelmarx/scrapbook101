@@ -1,5 +1,3 @@
 # travelmarx scrapbook101
 
-What is this? Link to blog post.
-
-Where are the docs (link)?
+Please see the docs here: https://travelmarx.github.io/scrapbook101/
