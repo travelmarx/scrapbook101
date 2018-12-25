@@ -15,8 +15,10 @@ Running {{site.sn}} locally, you can try out your ideas at no cost or risk. Afte
 
 ## Run local
 
-Next, get the {{site.sn}} code and open it as a solution in Visual Studio.  Customize the code as
-follows in the `web.config` file.
+Clone (https://github.com/travelmarx/scrapbook101.git) or download the {{site.sn}} code and open it as a solution in Visual Studio. The source code in the `src` folder and these docs in the `docs` folder. To start the solution, open
+the solution file `Scrapbook101.sln`.
+
+Once you open the solution in Visual Studio, customize the code as follows in the `web.config` file.
 
 1. Enter the correct value for **authKey**, which you can get from the local emulator home page as show above.
 2. Enter a Bing Maps Key for **bingMapKey** if you have one; if blank, then geocoding is skipped.
