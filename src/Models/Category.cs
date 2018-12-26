@@ -1,6 +1,5 @@
 ﻿namespace Scrapbook101.Models
 {
-    using Microsoft.Azure.Documents;
     using Newtonsoft.Json;
     using System.Collections.Generic;
     using System.ComponentModel.DataAnnotations;

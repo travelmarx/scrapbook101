@@ -26,7 +26,7 @@ Once you open the solution in Visual Studio, customize the code as follows in th
 
 There are other `web.config` you can change, but the the three above are the enough to get started.
 
-At this point you should be able to run the solution (Visual Studio F5) and view {{site.sn}} in a browser, e.g. https://localhost:port#/.
+With the Cosmos DB Local Emulator running, run the solution (Visual Studio F5) and view {{site.sn}} in a browser, e.g. https://localhost:port#/.
 
 What happened on startup:
 
