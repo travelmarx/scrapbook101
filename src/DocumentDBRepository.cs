@@ -16,10 +16,11 @@
 
     public static class AppVariables
     {
-        public static readonly string CategoryDocumentType = ConfigurationManager.AppSettings["categoryDocumentType"];
-        public static readonly string ItemDocumentType = ConfigurationManager.AppSettings["itemDocumentType"];
+        public static readonly string AuthKey = ConfigurationManager.AppSettings["authKey"];
         public static readonly string BingMapKey = ConfigurationManager.AppSettings["bingMapKey"];
-        public static readonly string Endpoint = ConfigurationManager.AppSettings["endpont"];
+        public static readonly string CategoryDocumentType = ConfigurationManager.AppSettings["categoryDocumentType"];
+        public static readonly string Endpoint = ConfigurationManager.AppSettings["endpoint"];
+        public static readonly string ItemDocumentType = ConfigurationManager.AppSettings["itemDocumentType"];
         public static readonly string NoAssetImage = ConfigurationManager.AppSettings["noAssetImage"];
         public static List<CategoryItemDisplay> CategoryDisplayList { get; set; }
         public static List<CategoryFieldMapping> CategoryFieldMappingList { get; set; }
@@ -86,7 +87,7 @@
 
         public static void Initialize()
         {
-            client = new DocumentClient(new Uri(ConfigurationManager.AppSettings["endpoint"]), ConfigurationManager.AppSettings["authKey"], new ConnectionPolicy { EnableEndpointDiscovery = false });
+            client = new DocumentClient(new Uri(AppVariables.Endpoint), AppVariables.AuthKey, new ConnectionPolicy { EnableEndpointDiscovery = false });
             CreateDatabaseIfNotExistsAsync().Wait();
             CreateCollectionIfNotExistsAsync().Wait();
             CreateCategoryDocumentIfNotExistsAsync().Wait();

@@ -43,7 +43,7 @@
         {
             string imagePath = ViewBag.imagePath[j];
             string title = item.Title;
-            string detailLink = Scrapbook101.AppVariables.Endpoint + "Item/Details?id=" + item.Id;
+            string detailLink = "Item/Details?id=" + item.Id;
             string bodyText = "";
             string mouseOverText = "";
             if (item.Description != null && item.Description.Length > 0)
