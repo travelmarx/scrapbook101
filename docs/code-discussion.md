@@ -89,7 +89,9 @@ var items = await DocumentDBRepository<Item>.GetItemsAsync(
 
 ## Styling
 
-The create, delete, update, and edit pages (under the `Views\Item` folder) are styled minimally. They can be improved and rearranged as needed. In contrast, the {{site.sn}} main page (`Views\Item\Index.cshtml`) is styled using [Bootstrap][boot] to demonstrate one way of viewing data using Bootstrap [cards][bootcard] and showing one asset image if it exists or else show a default image as specified in the `web.config` file.  
+The create, delete, update, and edit pages (under the `Views\Item` folder) are currently minimally styled. They can be improved and rearranged as needed. For example in the edit page, the **description** field can be customized to the long or short descriptions and fields that can't or shouldn't be changed (like **id** and **type**) can be removed from the the form.  
+
+In contrast, the {{site.sn}} main page (`Views\Item\Index.cshtml`) is styled with [Bootstrap][boot] to demonstrate a visual representation of the items in {{site.sn}}. The Bootstrap [cards][bootcard] structure is used that shows one asset image if it exists or else show a default image as specified in the `web.config` file.  
 
 All the scripts for styling are injected in the `Views\Shared\__Layout.cshtml`. A more typical approach is to bundle
 the scripts together and include them in the `App_Start\BundleConfig.cs`.
