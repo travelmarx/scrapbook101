@@ -87,9 +87,18 @@ Notes:
 
 * If something doesn't seem right with the build, check the build window started in your Git-Bash window. This is where your big time savings comes in because you can see what the problem is right away and address it.
 
-## Customization
+## Further tweaks
 
-After running for a few weeks, we wanted to add [tabbed content][tabs] using Bootstrap. This lead us discover that there is a GitHub Page theme with [Bootstrap 4 startup site][bootstraptheme]. Instead of using this, we ended up injecting the necessary scripts into the `_layouts\default.html`.
+Here is a running of list of further tweaks to our document editing and setup process:
+
+**Boostrap:** After running for a few weeks, we wanted to add [tabbed content][tabs] using Bootstrap. This lead us discover that there is a GitHub Page theme with [Bootstrap 4 startup site][bootstraptheme]. Instead of using this, we ended up injecting the necessary scripts into the `_layouts\default.html`.
+
+**Relative Links:** At first we didn't notice the difference between the local URL (e.g., http://localhost:4000/index) and the live site URL (https://travelmarx.github.io/scrapbook101/index). The difference of "scrapbook101" made relative document links work locally but not live. This [SO post][sopost] pointed the way that we could specify a baseurl parameter when starting Jekyll locally. We do two things:
+
+  - We define any internal links without a forward slash (/).
+  - We start Jekyll specifying a **baseurl** parameter like so <br/> `bundle exec jekyll serve --baseurl '//Scrapbook101'`.
+
+Another way to do this is outlined in the Jekyll help for [Project Page URL Structure][jekyllhelp].
 
 [ghp]: https://pages.github.com/
 [ghppub]: https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/
@@ -105,3 +114,5 @@ After running for a few weeks, we wanted to add [tabbed content][tabs] using Boo
 [vscode]: https://code.visualstudio.com/
 [tabs]: https://getbootstrap.com/docs/4.0/components/navs/#tabs
 [bootstraptheme]: https://nicolas-van.github.io/bootstrap-4-github-pages/
+[sopost]: https://stackoverflow.com/questions/16316311/github-pages-and-relative-paths
+[jekyllhelp]: https://jekyllrb.com/docs/github-pages/#project-page-url-structure
