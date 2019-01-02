@@ -7,7 +7,7 @@ This document set describes how to build a Personal Information Managment (PIM) 
 
 To see an example of this code in action, go to [TBD][demo]. Or here's a video of how it works [TBD][demo]. Note that these document pages are still a work in progress as of January 2019. 
 
-This document set cover both {{site.sn}} implemented on ASP.NET MVC and ASP.NET core MVC.
+This document set covers both {{site.sn}} implemented on the .NET Framework and .NET core.
 
 ## A brief recap
 
