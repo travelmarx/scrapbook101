@@ -50,9 +50,9 @@ In our personalized version of Scrapbook and as hinted at above, we use `Folder.
 
 Choosing the date (YYYY-MM-DD) as part of the asset path name leads to the problem of dealing with multiple {{site.sn}} items on the same date. We choose to resolve this issue by appending numbers (01, 02, etc.) at the end of the date so as to still retain the date format but denote multiple entries. Therefore, in the example above there are two {{site.sn}} items for `2018-10-28`.
 
+[item]: item-document
 [blog]: http://blog.travelmarx.com/2017/12/a-personal-information-management-system-introducing-scrapbook.html
 [blob]: https://azure.microsoft.com/en-us/services/storage/blobs/
 [htmlfile]: https://www.w3schools.com/jsref/dom_obj_fileupload.asp
 [onedriverest]: https://docs.microsoft.com/it-it/onedrive/developer/rest-api/?view=odsp-graph-online
-[item]: /item-document
 [cloudberry]: https://www.cloudberrylab.com/explorer.aspx

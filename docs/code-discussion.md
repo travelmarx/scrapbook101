@@ -124,11 +124,11 @@ In contrast, the {{site.sn}} main page (`Views\Item\Index.cshtml`) is styled wit
 
 Paging is not currently implemented in {{site.sn}}. Paging features can be added by modifying the search results in the `ItemController.cs` file where results are returned in the `SearchAsync` method.
 
+[item]: item-document
+[cat]: category-document
 [blog]: http://blog.travelmarx.com/2017/12/a-personal-information-management-system-introducing-scrapbook.html
 [boot]: https://getbootstrap.com
 [bootcard]: https://getbootstrap.com/docs/4.0/components/card/
-[item]: /item-document
-[cat]: /category-document
 [auth-fb]: https://docs.microsoft.com/en-us/azure/app-service/configure-authentication-provider-facebook
 [auth-goog]: https://docs.microsoft.com/en-us/azure/app-service/configure-authentication-provider-google
 [auth-msft]: https://docs.microsoft.com/en-us/azure/app-service/configure-authentication-provider-microsoft

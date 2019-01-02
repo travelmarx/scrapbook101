@@ -255,8 +255,8 @@ Using a schema generator like [JSONschema.net][json-schema-gen], a possible sche
 
 
 
-[tn]: /technology-overview
+[cat]: category-document
+[tn]: technology-overview
 [docdb]: https://en.wikipedia.org/wiki/Document-oriented_database
-[cat]: /category-document
 [json-schema]: https://json-schema.org/
 [json-schema-gen]: https://www.jsonschema.net/

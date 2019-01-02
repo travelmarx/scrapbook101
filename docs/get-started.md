@@ -118,13 +118,13 @@ There are a couple of other considerations when going live. In the least, you sh
 
 These and other topics are discussed in [Code Discussion][code-discussion].
 
+[code-discussion]: code-discussion
+[item]: item-document
+[cat]: category-document
 [vsdown]: https://visualstudio.microsoft.com/downloads/
 [emul]: https://docs.microsoft.com/en-us/azure/cosmos-db/local-emulator
 [cosmos]: https://azure.microsoft.com/en-us/services/cosmos-db/
 [azapp]: https://azure.microsoft.com/en-us/services/app-service/
 [bingmap]: https://www.microsoft.com/en-us/maps/create-a-bing-maps-key
-[item]: /item-document
-[cat]: /category-document
 [azblob]: https://azure.microsoft.com/en-us/services/storage/blobs/
-[code-discussion]: /code-discussion
 [work]: https://visualstudio.microsoft.com/vs/support/selecting-workloads-visual-studio-2017/

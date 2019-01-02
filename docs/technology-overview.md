@@ -136,6 +136,7 @@ we are returned the followng response (truncated for simplicity):
 ```
 The latitude (47.6035690307617) and longitude (-122.329452514648) are what would be stored with the {{site.sn}} item **geoLocation** field in the [item document][item-document].
 
+[item-document]: item-document
 [aspmvc]: https://www.asp.net/mvc
 [coremvc]: https://docs.microsoft.com/en-us/aspnet/core/mvc/overview?view=aspnetcore-2.2
 [mvcwiki]: https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller
@@ -147,7 +148,6 @@ The latitude (47.6035690307617) and longitude (-122.329452514648) are what would
 [bingmap]: https://www.microsoft.com/en-us/maps/create-a-bing-maps-key
 [bingrest]: https://msdn.microsoft.com/en-us/library/ff701715.aspx
 [geocode]: https://en.wikipedia.org/wiki/Geocoding
-[item-document]: /item-document
 [scrapmvc]: https://github.com/travelmarx/scrapbook101
 [scrapcore]: https://github.com/travelmarx/scrapbook101core
 [diff]: https://www.c-sharpcorner.com/article/difference-between-net-framework-and-net-core/

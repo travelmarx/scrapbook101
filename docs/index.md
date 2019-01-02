@@ -28,11 +28,11 @@ Why is {{site.sn}} documented here and not on [blog.travelmarx.com][tm]? For two
 
 Creating this site was itself a bit of odyssey into new tools and practices that we thought was interesting to document as well. If you want to know a little bit about how this site was created, see [About This Site][about].
 
+[about]: about-this-site
 [web]: https://travelmarx.github.io/scrapbook101/
 [blog]: http://blog.travelmarx.com/2017/12/a-personal-information-management-system-introducing-scrapbook.html
 [demo]: http://www.travelmarx.com/
 [tm]: http://blog.travelmarx.com
-[about]: /about-this-site
 [ghp]: https://pages.github.com/
 
 

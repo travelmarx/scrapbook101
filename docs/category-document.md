@@ -127,6 +127,6 @@ Fields not marked as **Required** are not required.
     </dd>
 </dl>
 
-[tn]: /technology-overview
-[item]: /item-document
+[tn]: technology-overview
+[item]: item-document
 [blog]: http://blog.travelmarx.com/2017/12/a-personal-information-management-system-introducing-scrapbook.html
