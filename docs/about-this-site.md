@@ -96,7 +96,7 @@ Here is a running of list of further tweaks to our document editing and setup pr
 **Relative Links:** At first we didn't notice the difference between the local URL (e.g., http://localhost:4000/index) and the live site URL (https://travelmarx.github.io/scrapbook101/index). The difference of "scrapbook101" made relative document links work locally but not live. This [SO post][sopost] pointed the way that we could specify a baseurl parameter when starting Jekyll locally. We do two things:
 
   - We define any internal links without a forward slash (/).
-  - We start Jekyll specifying a **baseurl** parameter like so <br/> `bundle exec jekyll serve --baseurl '//Scrapbook101'`.
+  - We start Jekyll specifying a **baseurl** parameter like so <br/> `bundle exec jekyll serve --baseurl '//scrapbook101'`.
 
 Another way to do this is outlined in the Jekyll help for [Project Page URL Structure][jekyllhelp].
 
