@@ -38,7 +38,7 @@ toc:
         heading: overview
       - title: Description of fields
         heading: description-of-fields
-      - title: JSON Schema
+      - title: JSON schema
         heading: json-schema
   - title: Category Document
     url: category-document
@@ -56,7 +56,7 @@ toc:
         heading: models
       - title: Security
         heading: security
-      - title: Import Data
+      - title: Import data
         heading: import-data
       - title: Searching
         heading: searching
@@ -67,7 +67,7 @@ toc:
     sections:
       - title: Overview
         heading: overview
-      - title: Asset Organization
+      - title: Asset organization
         heading: asset-organization
   - title: About This Site
     url: about-this-site
@@ -76,3 +76,5 @@ toc:
         heading: starting-off
       - title: Running locally
         heading: running-locally
+      - title: Customization
+        heading: customization

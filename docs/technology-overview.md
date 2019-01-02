@@ -64,7 +64,9 @@ In the {{site.sn}} code, similar queries are constructed using Language Integrat
 
 ### Origins
 
-The {{site.sn}} code was developed by starting with the [ASP.NET MVC][aspmvc] To-Do List app and customizing it. The To-Do list is a simple list of items with three pieces of tracked information: name, description, and status (completed or not completed). The To-Do List app allows CRUD operations. After running the To-Do list sample and looking in the document store, you will see documents that look like the following:
+The {{site.sn}} code was initially built starting with the [ASP.NET MVC][aspmvc] To-Do List app and customizing it. From that version, the ASP.NET core version was created. 
+
+The To-Do list is a simple list of items with three pieces of tracked information: name, description, and status (completed or not completed). The To-Do List app allows CRUD operations. After running the To-Do list sample and looking in the document store, you will see documents that look like the following:
 
 ```json
 {
@@ -74,13 +76,13 @@ The {{site.sn}} code was developed by starting with the [ASP.NET MVC][aspmvc] To
     "isComplete": false,
 }
 ```
-While {{site.sn}} is more complex, that is, more pieces of information are tracked and document schemas can change  as shown in the book/film example above, the idea is essentially the same as the To-Do list. 
+While {{site.sn}} is more complex, that is, more pieces of information are tracked and document JSON structure can change as shown in the book/film example above, the idea is essentially the same as the To-Do list. 
 
 ## MVC
 
-The second technology that underlies {{site.sn}} is the [Model-view-controller][mvcwiki] (MVC) software pattern. This pattern is commonly used to divide an application into pieces. Doing so has the advantages of better code reuse, parallel development, and ease of modification. The main challenge many encounter with MVC is that there is an initial learning curve getting used to thinking in terms of the three components (model, view, and controller) and understanding how they communicate.
+The second technology that underlies {{site.sn}} is the [Model-view-controller][mvcwiki] (MVC) software pattern. This pattern is commonly used to divide an application into functional pieces. Doing so has the advantages of better code reuse, parallel development, and ease of modification. The main challenge many encounter with MVC is that there is an initial learning curve getting used to thinking in terms of the three components (model, view, and controller) and understanding how they communicate.
 
-{{site.sn}} is built around the MVC pattern as supported by [ASP.NET MVC][aspmvc]. (You can also run {{site.sn}} under [ASP.NET Core][coremvc]) 
+{{site.sn}} is built around the MVC pattern as supported by the [.NET Framework][aspmvc] as well as [.NET Core][coremvc]. The ASP.NET MVC Visual Studio project file is [here][scrapmvc] and the ASP.NET Core Visual Studio project file is [here][scrapcore]. For more on the difference between the .NET Framework and .NET Core, see [The Difference Between .NET Framework and .NET Core][diff].
 
 The model-view-control pattern is supported by many programming languages such as Java, Ruby, Python and JavaScript. For example, the [TodoMVC][todomvc] project shows many different implementations in JavaScript-based frameworks. 
 
@@ -134,7 +136,6 @@ we are returned the followng response (truncated for simplicity):
 ```
 The latitude (47.6035690307617) and longitude (-122.329452514648) are what would be stored with the {{site.sn}} item **geoLocation** field in the [item document][item-document].
 
-
 [aspmvc]: https://www.asp.net/mvc
 [coremvc]: https://docs.microsoft.com/en-us/aspnet/core/mvc/overview?view=aspnetcore-2.2
 [mvcwiki]: https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller
@@ -147,7 +148,6 @@ The latitude (47.6035690307617) and longitude (-122.329452514648) are what would
 [bingrest]: https://msdn.microsoft.com/en-us/library/ff701715.aspx
 [geocode]: https://en.wikipedia.org/wiki/Geocoding
 [item-document]: /item-document
-
-[comment]: <> (Links not used.)
-[cosmosdocs]: https://docs.microsoft.com/en-us/azure/cosmos-db/
-
+[scrapmvc]: https://github.com/travelmarx/scrapbook101
+[scrapcore]: https://github.com/travelmarx/scrapbook101core
+[diff]: https://www.c-sharpcorner.com/article/difference-between-net-framework-and-net-core/

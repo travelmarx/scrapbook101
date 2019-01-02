@@ -194,7 +194,7 @@ Fields not marked as **Required** are not required.
     </dd>
 </dl>
 
-## JSON Schema
+## JSON schema
 
 *Optional reading.*
 

@@ -87,6 +87,10 @@ Notes:
 
 * If something doesn't seem right with the build, check the build window started in your Git-Bash window. This is where your big time savings comes in because you can see what the problem is right away and address it.
 
+## Customization
+
+After running for a few weeks, we wanted to add [tabbed content][tabs] using Bootstrap. This lead us discover that there is a GitHub Page theme with [Bootstrap 4 startup site][bootstraptheme]. Instead of using this, we ended up injecting the necessary scripts into the `_layouts\default.html`.
+
 [ghp]: https://pages.github.com/
 [ghppub]: https://help.github.com/articles/configuring-a-publishing-source-for-github-pages/
 [ghptheme]: https://help.github.com/articles/adding-a-jekyll-theme-to-your-github-pages-site/
@@ -99,3 +103,5 @@ Notes:
 [gitbash]: https://gitforwindows.org/
 [desktop]: https://desktop.github.com/
 [vscode]: https://code.visualstudio.com/
+[tabs]: https://getbootstrap.com/docs/4.0/components/navs/#tabs
+[bootstraptheme]: https://nicolas-van.github.io/bootstrap-4-github-pages/

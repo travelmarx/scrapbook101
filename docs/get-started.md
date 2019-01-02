@@ -9,30 +9,85 @@ To build the {{site.sn}} app on Windows use the following:
 * [Azure Cosmos DB Local Emulator][emul]
 * [Bing Maps Basic Key][bingmap] (optional)
 
-Running {{site.sn}} locally, you can try out your ideas at no cost or risk. After installing the tools described above, first confirm that you can run Cosmos DB Local Emulator. You should see a screen like the following image. 
+Install these components on your development or local server. This server will be your local run/test environment as well as the publish point to push changes live, if you choose to do so.
+
+Visual Studio has different workloads that can be installed. If you are running {{site.sn}} on ASP.NET for Windows, then you need the *ASP.NET and web development* workload. If you are running {{site.sn}} on ASP.NET Core, then you need the *.NET Cross-platform development workload*. For more information on workloads, see [Selecting Workloads in Visual Studio 2017][work].
+
+After installing the Cosmos DB Emulator, confirm that you can run Cosmos DB Local Emulator. You should see a screen like the following image. 
 
 ![Alt text](images/where-to-get-samples.jpg "Getting samples in Cosmos DB Local Emulator")
 
 ## Run local
 
-Clone (https://github.com/travelmarx/scrapbook101.git) or download the {{site.sn}} code and open it as a solution in Visual Studio. The source code in the `src` folder and these docs in the `docs` folder. To start the solution, open
-the solution file `Scrapbook101.sln`.
+Running {{site.sn}} locally, you can try out your ideas at no cost or risk.
 
-Once you open the solution in Visual Studio, customize the code as follows in the `web.config` file.
+<ul class="nav nav-tabs" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" href="#runlocal1" role="tab"
+    data-toggle="tab">ASP.NET MVC</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#runlocal2" role="tab"
+    data-toggle="tab">ASP.NET Core</a>
+  </li>
+</ul>
 
-1. Enter the correct value for **authKey**, which you can get from the local emulator home page as show above.
-2. Enter a Bing Maps Key for **bingMapKey** if you have one; if blank, then geocoding is skipped.
-3. Set the value for **addTestAssets** to `true` to write test assets or `false` not to write them.
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane aspnetmvc active" id="runlocal1">
+  <ol><li>Clone (<a href="https://github.com/travelmarx/scrapbook101.git">https://github.com/travelmarx/scrapbook101.git</a>) or download the {{site.sn}} code and open it as a solution in Visual Studio. The source code in the <code>src</code> folder and these docs in the <code>docs</code> folder.</li>
+<li>Open the solution in Visual Studio. For example, open the solution file <code>Scrapbook101.sln</code>.
+   </li><li>Customize the code as follows in the <code>web.config</code> file.
+   <ul><li>Enter the correct value for <strong>authKey</strong>, which you can get from the local emulator home page as show above.</li><li>Enter a Bing Maps Key for <strong>bingMapKey</strong> if you have one; if blank, then geocoding is skipped.</li><li>Set the value for <strong>addTestAssets</strong> to <code>true</code> to write test assets or <code>false</code> not to write them.</li></ul>
+   There are other <code>web.config</code> settings you can change, but the the three above are the enough to get started.
+   </li></ol>
+</div>
+  <div role="tabpanel" class="tab-pane aspnetcore" id="runlocal2">
+  <ol><li>Clone (<a href="https://github.com/travelmarx/scrapbook101core.git">https://github.com/travelmarx/scrapbook101core.git</a>) or download the {{site.sn}} code and open it as a solution in Visual Studio. The source code in the <code>
+Scrapbook101core</code> folder. </li>
+  <li>Open the solution in Visual Studio. For example, open the solution file <code>Scrapbook101core.sln</code>.
+   </li><li>Customize the code as follows in the <code>appsettings.json</code> file.
+   <ul><li>Enter the correct value for <strong>AuthKey</strong>, which you can get from the local emulator home page as show above.</li><li>Enter a Bing Maps Key for <strong>BingMapKey</strong> if you have one; if blank, then geocoding is skipped.</li><li>Set the value for <strong>AddTestAssets</strong> to <code>true</code> to write test assets or <code>false</code> not to write them.</li></ul>
+   There are other <code>appsettings.json</code> settings you can change, but the the three above are the enough to get started.
+   </li></ol>
+  </div>
+</div>
 
-There are other `web.config` you can change, but the the three above are the enough to get started.
+With the Cosmos DB Local Emulator running, run the solution (Visual Studio F5) and view {{site.sn}} in a browser, e.g. https://localhost:port#/. You should see something ressembling the following screenshot:
 
-With the Cosmos DB Local Emulator running, run the solution (Visual Studio F5) and view {{site.sn}} in a browser, e.g. https://localhost:port#/.
+![Alt text](images/scrapbook101-running.png "Scrapbook101 Home Page")
+
 
 What happened on startup:
 
-* A database named **{{site.sn}}** and collection named **Items** was created in the document store. 
-* A [category document][cat] was created and stored in the document store. The category information was read from the file `App_data/categories-document.json`.
-* If **addTestAssets** was set to `true` test {{site.sn}} items were added to the document store as well. They were read from the file `App_Data/test-documents.json`.
+<ul class="nav nav-tabs" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" href="#explanation1" role="tab"
+    data-toggle="tab">ASP.NET MVC</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="#explanation2" role="tab"
+    data-toggle="tab">ASP.NET Core</a>
+  </li>
+</ul>
+
+<div class="tab-content">
+  <div role="tabpanel" class="tab-pane aspnetmvc active" id="explanation1">
+    <ol>
+    <li>A database named <strong>Scrapbook101</strong> and collection named <strong>Items</strong> was created in the document store.</li>
+    <li>A <a href="/category-document">category document</a> was created and stored in the document store. The category information was read from the file <code>Assets/categories-document.json</code>.</li>
+    <li>If the configuration option <strong>addTestAssets</strong> to create test assets was set to `true` in 
+    the <code>web.config</code> file, then test items were added to the document store as well. They were read from the file <code>App_data/categories-document.json</code>.</li>
+    </ol>
+  </div>
+  <div role="tabpanel" class="tab-pane aspnetcore" id="explanation2">
+    <ol>
+    <li>A database named <strong>Scrapbook101</strong> and collection named <strong>Items</strong> was created in the document store.</li>
+    <li>A <a href="/category-document">category document</a> was created and stored in the document store. The category information was read from the file <code>Assets/categories-document.json</code>.</li>
+    <li>If the configuration option <strong>AddTestAssets</strong> to create test assets was set to `true` in 
+    <code>appsettings.json</code>, then test items were added to the document store as well. They were read from the file <code>Assets/categories-document.json</code>.</li>
+    </ol>
+  </div>
+</div>
 
 ## Create an item
 
@@ -72,3 +127,4 @@ These and other topics are discussed in [Code Discussion][code-discussion].
 [cat]: /category-document
 [azblob]: https://azure.microsoft.com/en-us/services/storage/blobs/
 [code-discussion]: /code-discussion
+[work]: https://visualstudio.microsoft.com/vs/support/selecting-workloads-visual-studio-2017/

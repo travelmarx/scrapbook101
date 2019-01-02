@@ -36,3 +36,12 @@
   position: static;
   float: none;
 }
+.tab-pane.aspnetmvc {
+    background-color: rgba(235, 235, 235, 1);
+}
+.tab-pane.aspnetcore {
+  background-color: rgba(222, 247, 228, 1);
+}
+.tab-pane p.single {
+  padding: 10px 0px 10px 20px;
+}
