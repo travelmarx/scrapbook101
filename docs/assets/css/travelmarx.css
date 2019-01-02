@@ -45,3 +45,7 @@
 .tab-pane p.single {
   padding: 10px 0px 10px 20px;
 }
+.tab-pane ol {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}

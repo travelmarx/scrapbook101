@@ -73,7 +73,7 @@ What happened on startup:
 <div class="tab-content">
   <div role="tabpanel" class="tab-pane aspnetmvc active" id="explanation1">
     <ol>
-    <li>A database named <strong>Scrapbook101</strong> and collection named <strong>Items</strong> was created in the document store.</li>
+    <li>In the document store, a database named <strong>Scrapbook101</strong> was created with a collection named <strong>Items</strong>.</li>
     <li>A <a href="category-document">category document</a> was created and stored in the document store. The category information was read from the file <code>Assets/categories-document.json</code>.</li>
     <li>If the configuration option <strong>addTestAssets</strong> to create test assets was set to `true` in 
     the <code>web.config</code> file, then test items were added to the document store as well. They were read from the file <code>App_data/categories-document.json</code>.</li>
@@ -81,7 +81,7 @@ What happened on startup:
   </div>
   <div role="tabpanel" class="tab-pane aspnetcore" id="explanation2">
     <ol>
-    <li>A database named <strong>Scrapbook101</strong> and collection named <strong>Items</strong> was created in the document store.</li>
+    <li>In the document store, a database named <strong>Scrapbook101</strong> was created with a collection named <strong>Items</strong>.</li>
     <li>A <a href="category-document">category document</a> was created and stored in the document store. The category information was read from the file <code>Assets/categories-document.json</code>.</li>
     <li>If the configuration option <strong>AddTestAssets</strong> to create test assets was set to `true` in 
     <code>appsettings.json</code>, then test items were added to the document store as well. They were read from the file <code>Assets/categories-document.json</code>.</li>
