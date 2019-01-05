@@ -5,7 +5,7 @@ layout: default
 
 This site was created with [GitHub Pages][ghp]. In the process of learning about GitHub Pages, we decided to also document what we learned.
 
-## Starting off
+## Initial steps
 
 We started out simply by creating [this repository][this] and editing using the GitHub user interface in a browser. We were able to set up the initial skeleton of the site with a few pages. 
 
@@ -57,16 +57,16 @@ Running our site locally, enables
 * Checking in many changes at once.
 * Speeding up write-build cycle by finding and fixing build problems quicker.
 
-For more information about running Jekyll locally, see [Setting up your GitHub Pages site locally with Jekyll][ghpjekloc]. After following the help, our site wasn't rendering correctly and we realized that while working only on-line (with the GitHub UI) our pages didn't need what's called *front matter*, but locally it was needed for each page. A simple *front matter* looks like this:
+For more information about running Jekyll locally, see [Setting up your GitHub Pages site locally with Jekyll][ghpjekloc]. After following the help, our site wasn't rendering correctly and we realized that while working only on-line (with the GitHub UI) our pages didn't seem to need what's called *front matter*, but locally it was needed for each page. A simple *front matter* looks like this:
 
 ```md
 ---
 layout: default
 ---
 ```
-The next thing we realized was that we would need a `Gemfile` and a `.gitignore` to avoid checking in local files we didn't need checked, including the locally built site HTML files. 
+The next thing we realized was that we would need a [`Gemfile`][gemfile] to describe Ruby dependencies (Jekyll is written in Ruby) and a [`.gitignore`][gitignore] to avoid checking in local files we didn't need saved, including the locally built site HTML files. 
 
-Here's an overview of the key commands used in [Git Bash][gitbash]:
+Here's an overview of the key commands used in [Git Bash][gitbash] to get going locally:
 
 ```bsh
 $ git init travelmarx
@@ -85,18 +85,18 @@ Notes:
 
 * You have to restart (`bundle exec jekyll serve`) to pick up changes in the `_config.yml`. For example, if you add a new site variable.
 
-* If something doesn't seem right with the build, check the build window started in your Git-Bash window. This is where your big time savings comes in because you can see what the problem is right away and address it.
+* If something doesn't seem right with the build, check the build output in your Git-Bash window. This is where your big time savings comes in because you can see what the problem is right away and address it.
 
 ## Further tweaks
 
 Here is a running of list of further tweaks to our document editing and setup process:
 
-**Boostrap:** After running for a few weeks, we wanted to add [tabbed content][tabs] using Bootstrap. This lead us discover that there is a GitHub Page theme with [Bootstrap 4 startup site][bootstraptheme]. Instead of using this, we ended up injecting the necessary scripts into the `_layouts\default.html`.
+**Boostrap:** After running for a few weeks, we wanted to add [tabbed content][tabs] using Bootstrap. This lead us discover that there is a GitHub Page theme with [Bootstrap 4 startup site][bootstraptheme]. However, instead of using this, we ended up injecting the necessary Bootstrap scripts into the `_layouts\default.html`.
 
-**Relative Links:** At first we didn't notice the difference between the local URL (e.g., http://localhost:4000/index) and the live site URL (https://travelmarx.github.io/scrapbook101/index). The difference of "scrapbook101" made relative document links work locally but not live. This [SO post][sopost] pointed the way that we could specify a baseurl parameter when starting Jekyll locally. We do two things:
+**Relative Links:** At first we didn't notice the difference between the local URL (e.g., http://localhost:4000/index) and the live site URL (https://travelmarx.github.io/scrapbook101/index). The difference of "scrapbook101" made relative document links work locally but not live. This [SO post][sopost] pointed the way that we could specify a **baseurl**I parameter when starting Jekyll locally. We do two things:
 
   - We define any internal links without a forward slash (/).
-  - We start Jekyll specifying a **baseurl** parameter like so <br/> `bundle exec jekyll serve --baseurl '//scrapbook101'`.
+  - We start Jekyll locally specifying a **baseurl** parameter like so <br/> `bundle exec jekyll serve --baseurl '//scrapbook101'`.
 
 Another way to do this is outlined in the Jekyll help for [Project Page URL Structure][jekyllhelp].
 
@@ -116,3 +116,5 @@ Another way to do this is outlined in the Jekyll help for [Project Page URL Stru
 [bootstraptheme]: https://nicolas-van.github.io/bootstrap-4-github-pages/
 [sopost]: https://stackoverflow.com/questions/16316311/github-pages-and-relative-paths
 [jekyllhelp]: https://jekyllrb.com/docs/github-pages/#project-page-url-structure
+[gemfile]: https://github.com/travelmarx/scrapbook101/blob/master/Gemfile
+[gitignore]: https://github.com/travelmarx/scrapbook101/blob/master/.gitignore

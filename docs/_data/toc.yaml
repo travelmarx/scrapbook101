@@ -72,8 +72,8 @@ toc:
   - title: About This Site
     url: about-this-site
     sections:
-      - title: Starting off
-        heading: starting-off
+      - title: Initial steps
+        heading: initial-steps
       - title: Running locally
         heading: running-locally
       - title: Further tweaks

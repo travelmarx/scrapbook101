@@ -82,7 +82,7 @@ Each category has a **name**, **description**, and one or more associated **cate
 
 ## Description of fields
 
-Fields not marked as **Required** are not required.
+Fields not marked as <u>Required</u> are not required.
 
 <dl class="deflist">
     <dt>categoryFields</dt>
@@ -92,37 +92,37 @@ Fields not marked as **Required** are not required.
     <strong>synopsis</strong>, <strong>theme</strong>, <strong>type</strong> <strong>who</strong>, and <strong>year</strong>. The keys are not required. If specified, their values are strings.
     <br/><br/>
     Which keys are used depends on the category chosen for the {{site.sn}} item. If <i>null</i>, no keys are stored for the item.
-    <p>
-        <strong>Default</strong>: <i>null</i>
+    <p class="inset">
+        <u>Default</u>: <i>null</i>
         <br/>
-        <strong>Format</strong>: A JSON object containing key-value pairs. 
+        <u>Format</u>: A JSON object containing key-value pairs. 
     </p>
     </dd>
     <dt>description</dt>
     <dd>Describes the category. This field is used for information in dropdowns or tooltips.
-    <p>
-        <strong>Default</strong>: <i>null</i>
+    <p class="inset">
+        <u>Default</u>: <i>null</i>
         <br/>
-        <strong>Format</strong>: A string.
+        <u>Format</u>: A string.
     </p>
     </dd>
     <dt>id</dt>
     <dd>This is an auto-generated GUID representing the item. The value can be auto-generated or assigned. 
     The <strong>id</strong> is used to easily reference the category document.
-    <p>
-        <strong>Required</strong>
+    <p class="inset">
+        <u>Required</u>
         <br/>
-        <strong>Format</strong>: A GUID, e.g., "49916d87-e565-4220-8806-b9e60c867ae6".
+        <u>Format</u>: A GUID, e.g., "49916d87-e565-4220-8806-b9e60c867ae6".
     </p>
     </dd>
     <dt>type</dt>
     <dd>Describes the type of record. If your records are stored in a data store with other records with
         an <strong>id</strong> field, then <strong>type</strong> helps distinguish {{site.sn}} records uniquely.
         There are two types of documents, <a href="/item-document">item documents</a> and category documents.
-    <p>
-        <strong>Required</strong>
+    <p class="inset">
+        <u>Required</u>
         <br/>
-        <strong>Format</strong>: A string equal to "scrapbook101Categories".
+        <u>Format</u>: A string equal to "scrapbook101Categories".
     </p>
     </dd>
 </dl>
