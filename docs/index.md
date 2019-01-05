@@ -3,9 +3,10 @@ layout: default
 ---
 # Introduction
 
-This document set describes how to build a Personal Information Managment (PIM) system as discussed in the related of the blog post [A Personal Information Management System: Introducing Scrapbook][blog]. In that post we describe why we built our own PIM and give a  high-level look at how it was built. We call our PIM system "Scrapbook". This web site discusses in detail how you can create a version of Scrapbook yourself on Windows using ASP.NET. In the interest of reduced complexity, we present here a simplified version we call {{site.sn}}.
+This document set describes how to build a Personal Information Managment (PIM) system as discussed in the related of the blog post [A Personal Information Management System: Introducing Scrapbook][blog]. In that post we describe why we built our own PIM and give a  high-level look at how it was built. We call our PIM system "Scrapbook". This web site discusses in detail how you can create a version of Scrapbook yourself on Windows using ASP.NET. In the interest of reduced complexity, we present here a simplified version we call {{site.sn}}. 
 
-To see an example of this code in action, go to [TBD][demo]. Or here's a video of how it works [TBD][demo]. Note that these document pages are still a work in progress as of January 2019. 
+
+After building and running the code, you should have a simple {{site.sn}} site populated with ten entries and supporting assets. Note that these document pages are still a work in progress as of January 2019. 
 
 This document set covers both {{site.sn}} implemented on the .NET Framework and .NET core.
 
