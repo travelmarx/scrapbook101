@@ -24,23 +24,30 @@
         <p>{{ site.description | default: site.github.project_tagline }}</p>
         
         <hr/>
- 
-        <ul class="nav">
-          {% for itemLevel1 in site.data.toc.toc %}
-          <li><a href="{{itemLevel1.url}}">{{itemLevel1.title}}</a>
-              <ul>
-              {% for itemLevel2 in itemLevel1.sections %}
-                <li><a href="{{itemLevel1.url}}#{{itemLevel2.heading}}">{{itemLevel2.title}}</a></li>
+        
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="nav">
+              {% for itemLevel1 in site.data.toc.toc %}
+              <li><a href="{{itemLevel1.url}}">{{itemLevel1.title}}</a>
                   <ul>
-                    {% for itemLevel3 in itemLevel2.sections %}
-                      <li><a href="{{itemLevel1.url}}#{{itemLevel3.heading}}">{{itemLevel3.title}}</a></li>
-                    {% endfor %}
+                  {% for itemLevel2 in itemLevel1.sections %}
+                    <li><a href="{{itemLevel1.url}}#{{itemLevel2.heading}}">{{itemLevel2.title}}</a></li>
+                      <ul>
+                        {% for itemLevel3 in itemLevel2.sections %}
+                          <li><a href="{{itemLevel1.url}}#{{itemLevel3.heading}}">{{itemLevel3.title}}</a></li>
+                        {% endfor %}
+                      </ul>
+                  {% endfor %}
                   </ul>
+                </li>
               {% endfor %}
-              </ul>
-            </li>
-          {% endfor %}
-        </ul>
+            </ul>
+        </div>
+        </nav>
 
         <hr/>
         
