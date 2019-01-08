@@ -17,7 +17,7 @@ The blog post referenced above discusses our reasons for creating a Scrapbook ap
 * Deal with ever-increasing amounts of personal **archival** data, both physical and digital, in a consistent way.
 * Capture **context** about data so that when we looked at it in the future we would understood why we saved it and why it was important.
 * **Find** our data quickly and on-demand, for example, using natural language and a chat bot.
-* **Own** our data and not have it living in a social network or service that locks the format or controls access of it.
+* **Own** our data and not have it live in a social network or service that locks the format or controls our access to it.
 
 The way we could accomplish this was to create a custom PIM system consisting of software, programming frameworks, and cloud services working together to achieve our four principles described above.
 
@@ -27,7 +27,7 @@ While {{site.sn}} is a pared-down version of what we described in the blog post,
 
 Why is {{site.sn}} documented here and not on [blog.travelmarx.com][tm]? For two reasons. First, we were interested in trying out [GitHub Pages][ghp] for technical documentation. And second, demonstrating code and talking about it in a Blogger post is not easy for writer or reader. Hence, this GitHub Pages site was born.
 
-Creating this site was itself a bit of odyssey into new tools and practices that we thought was interesting to document as well. If you want to know a little bit about how this site was created, see [About This Site][about].
+Creating this site was itself a bit of odyssey into new tools and practices that we thought were interesting to document as well. If you want to know a little bit about how this site was created, see [About This Site][about].
 
 [about]: about-this-site
 [web]: https://travelmarx.github.io/scrapbook101/
