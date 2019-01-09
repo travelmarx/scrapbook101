@@ -53,3 +53,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
+ul.nav li.active a {
+  color: darkred;
+  cursor: default;
+}

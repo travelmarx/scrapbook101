@@ -1,5 +1,6 @@
 ---
 layout: default
+toc_entry: index
 ---
 # Introduction
 

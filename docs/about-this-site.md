@@ -1,5 +1,6 @@
 ---
 layout: default
+toc_entry: about-this-site
 ---
 # About this site
 
