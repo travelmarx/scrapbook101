@@ -8,7 +8,7 @@ This site was created with [GitHub Pages][ghp]. In the process of learning about
 
 ## Initial steps
 
-We started out simply by creating [this repository][this] and editing using the GitHub user interface in a browser. We were able to set up the initial skeleton of the site with a few pages. 
+We started out simply by creating [this repository][this] and editing using the GitHub user interface in a browser. We were able to set up the initial skeleton of the site with a few pages in under an hour. 
 
 We decided on the approach of using a folder named `docs` located in the master branch. See the [GitHub Pages][ghppub] docs for other choices. After seeing that we could choose a theme in our repository setting, we choose a [theme][ghptheme] and build our docs. We immediately got a decent looking site right-out-of-the-box. Behind the scenes, GitHub Pages takes what you have checked in and automatically generates your web site from any HTML or markdown files you have in the document root.
 
@@ -16,7 +16,7 @@ So far so good, but we wondered about how we could have a table of contents (TOC
 
 * Copy our Jekyll theme's layout `_layouts/default.html` file into our project and modify it.
 * Add custom style in `assets/css/travelmarx.css`.
-* Add a `_data/toc.yaml` file to describe our table of contents. The `_data` folder is a Jekyll directory [convention][jek2] conventionand after reading this [YAML tutorial][yamltut], it all started to come together on how to create a table of contents.
+* Add a `_data/toc.yaml` file to describe our table of contents. The `_data` folder is a Jekyll directory [convention][jek2] convention and after reading this [YAML tutorial][yamltut], it all started to come together on how to create a table of contents.
 
 Our table of contents file, `toc.yaml`, looks like this:
 
@@ -34,7 +34,7 @@ toc:
   ...
 ```
 
-The code to read the `toc.yaml` appears in the `default.html` file and is logically this:
+The code to read the `toc.yaml` appears in the `_layouts\default.html` file and is logically this:
 
 ```javascript
 for itemLevel1 in site.data.toc.toc
@@ -56,13 +56,14 @@ Running our site locally, enables
 
 * Editing offline and with different tools and environments. (We use [GitHub Desktop][desktop] and [Visual Studio Code][vscode].)
 * Checking in many changes at once.
-* Speeding up write-build cycle by finding and fixing build problems quicker.
+* Speeding up write-build cycle by finding and fixing build problems quicker. Errors appear in the window where you start the Jekyll process.
 
 For more information about running Jekyll locally, see [Setting up your GitHub Pages site locally with Jekyll][ghpjekloc]. After following the help, our site wasn't rendering correctly and we realized that while working only on-line (with the GitHub UI) our pages didn't seem to need what's called *front matter*, but locally it was needed for each page. A simple *front matter* looks like this:
 
 ```md
 ---
 layout: default
+toc_entry: about-this-site
 ---
 ```
 The next thing we realized was that we would need a [`Gemfile`][gemfile] to describe Ruby dependencies (Jekyll is written in Ruby) and a [`.gitignore`][gitignore] to avoid checking in local files we didn't need saved, including the locally built site HTML files. 

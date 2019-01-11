@@ -4,6 +4,8 @@ toc_entry: code-discussion
 ---
 # Code Discussion
 
+At this point, if you followed the steps in [Get Started][gs], you might have some more questions about how the code works. In this topic, we discuss the rational behind how categories are defined in {{site.sn}} and how C# objects are used to model both category and items.
+
 ## Categories
 
 {{site.sn}} items are described by a name/value pairs such as **title**, **id**, and **category**. There are also objects that contain child name/value pairs. For example, **assets** is an object that contains name/value pairs with the names **name** and **size**. See [item document][item] for more information.
@@ -59,85 +61,10 @@ public class CategoryFields
 }
 ```
 
-## Security
 
-*Authentication* is verifying the identify of a person or device (an account in general). {{site.sn}} does not have authentication implemented, but it can be added. This is especially important when running live. For example, you can add code to allow users to sign in with [Google][auth-goog], [Facebook][auth-fb], [Microsoft][auth-msft] accounts as well as by other means. Even if your {{site.sn}} implementation is open, tracking who makes and edits entries is useful. This can be done by capturing the associated email or user name and using that in the **updatedBy** field in the [item-document][item].
 
-If the intent of your {{site.sn}} implementation is to allow only certain accounts access, then you need to additionally set up *Authorization*, that is, associating privileges to specific accounts. In fact, you should never store personal information (be it with {{site.sn}} or any other means) without authentication and authorization in place. For an overview of security in ASP.NET Core, see [Introduction to authorization in ASP.NET Core][auth-core]. The approaches discussed there could be useful when running locally. When running as a web service such as in Microsoft Azure, see [Advanced usage of authentication and authorization in Azure App Service][auth-adv].
-
-## Import data
-
-If you run {{site.sn}} locally and start to add entries and then decide to go-live, you can transfer your local data to your on-line data-store using the [Azure Cosmos DB Data Migration tool][migration].
-
-## Searching
-
-The search functionality implemented in {{site.sn}} allows searching titles for a string fragment. The code to do
-this is in the `ItemController.cs` file's `SearchAsync` method, which uses [LINQ][linq]:
-
-```C#
-var items = await DocumentDBRepository<Item>.GetItemsAsync(
-    item => item.Type == AppVariables.ItemDocumentType
-    && item.Title.ToLower().Contains(searchString.ToLower()));
-```
-The included functionality is basic but can be expanded to include searching the **description**, **location**, and **dateAdded** fields. For example, to search both the **title** and the **description**, you could use
-
-```C#
-var items = await DocumentDBRepository<Item>.GetItemsAsync(
-    item => item.Type == AppVariables.ItemDocumentType
-    && (item.Title.ToLower().Contains(searchString.ToLower())
-    || item.Description.ToLower().Contains(searchString.ToLower())));
-```
-
-## Styling
-
-The create, delete, update, and edit pages (under the `Views\Item` folder) are currently minimally styled. They can be improved and rearranged as needed. For example in the edit page, the **description** field can be customized for long or short descriptions and fields that can't or shouldn't be changed (like **id** and **type**) can be removed from the form. 
-
-In contrast, the {{site.sn}} main page (`Views\Item\Index.cshtml`) is styled with [Bootstrap][boot] to demonstrate a possible visual representation of the items in {{site.sn}}. The Bootstrap [cards][bootcard] structure is used which shows one asset image if it exists or else show a default image as specified in the configuration file (either `web.config` or `appsettings.json`).  
-
-<ul class="nav nav-tabs" role="tablist">
-  <li class="nav-item">
-    <a class="nav-link active" href="#styling1" role="tab"
-    data-toggle="tab">ASP.NET MVC</a>
-  </li>
-  <li class="nav-item">
-    <a class="nav-link" href="#styling2" role="tab"
-    data-toggle="tab">ASP.NET Core</a>
-  </li>
-</ul>
-
-<div class="tab-content">
-  <div role="tabpanel" class="tab-pane aspnetmvc active" id="styling1">
-    <p class="single">
-    All the scripts for styling are injected in <code>Views\Shared\__Layout.cshtml</code>. 
-    A more practical approach is to bundle
-    the scripts together and include them in the <code>App_Start\BundleConfig.cs</code>.
-    </p>
-  </div>
-  <div role="tabpanel" class="tab-pane aspnetcore" id="styling2">
-    <p class="single">
-    All the scripts for styling are injected in <code>Views\Shared\__LayoutScrapbook.cshtml</code>. A more practical approach is to bundle the scripts together and include them using a tool such as 
-    <a href="https://marketplace.visualstudio.com/items?itemName=MadsKristensen.BundlerMinifier">Bundle & Minifier</a> or <a href="https://www.nuget.org/packages/BuildBundlerMinifier/">BuildBundleMinifier</a>.
-    </p>
-  </div>
-</div>
-
-## Paging
-
-Paging is not currently implemented in {{site.sn}}. Paging features can be added by modifying the search results in the `ItemController.cs` file where results are returned in the `SearchAsync` method.
-
+[gs]: get-started
 [item]: item-document
 [cat]: category-document
 [blog]: http://blog.travelmarx.com/2017/12/a-personal-information-management-system-introducing-scrapbook.html
-[boot]: https://getbootstrap.com
-[bootcard]: https://getbootstrap.com/docs/4.0/components/card/
-[auth-fb]: https://docs.microsoft.com/en-us/azure/app-service/configure-authentication-provider-facebook
-[auth-goog]: https://docs.microsoft.com/en-us/azure/app-service/configure-authentication-provider-google
-[auth-msft]: https://docs.microsoft.com/en-us/azure/app-service/configure-authentication-provider-microsoft
-[auth-adv]: https://docs.microsoft.com/en-us/azure/app-service/app-service-authentication-how-to
-[auth-core]: https://docs.microsoft.com/en-us/aspnet/core/security/authorization/introduction?view=aspnetcore-2.2
-[migrate]: https://docs.microsoft.com/en-us/azure/cosmos-db/import-data
 [newton]: https://www.newtonsoft.com/json
-[migration]: https://docs.microsoft.com/en-us/azure/cosmos-db/import-data
-[linq]: https://docs.microsoft.com/en-us/dotnet/csharp/tutorials/working-with-linq
-[bundle1]: https://marketplace.visualstudio.com/items?itemName=MadsKristensen.BundlerMinifier
-[bundle2]: https://www.nuget.org/packages/BuildBundlerMinifier/

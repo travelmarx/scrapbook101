@@ -6,7 +6,7 @@ toc_entry: get-started
 
 To build the {{site.sn}} app on Windows use the following:
 
-* [Visual Studio Community][vsdown]  
+* [Visual Studio Community Edition][vsdown]  
 * [Azure Cosmos DB Local Emulator][emul]
 * [Bing Maps Basic Key][bingmap] (optional)
 
@@ -117,9 +117,10 @@ There are a couple of other considerations when going live. In the least, you sh
 * Transfering any documents from local emulator to live service.
 * How to deal with asset storage.
 
-These and other topics are discussed in [Code Discussion][code-discussion].
+These and other topics are discussed in [Next Steps][next-steps] and [Handling Assets][handling-assets].
 
-[code-discussion]: code-discussion
+[next-steps]: next-steps
+[handling-assets]: handling-assets
 [item]: item-document
 [cat]: category-document
 [vsdown]: https://visualstudio.microsoft.com/downloads/

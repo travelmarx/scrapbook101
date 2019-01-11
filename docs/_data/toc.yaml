@@ -47,6 +47,9 @@ toc:
         heading: categories
       - title: Models
         heading: models
+  - title: Next Steps
+    url: next-steps
+    sections:
       - title: Security
         heading: security
       - title: Import data
