@@ -1,99 +1,162 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<html>
 
-{% seo %}
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Scrapbook101</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
     <link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
     <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
     <![endif]-->
     <link rel="stylesheet" href="{{ "/assets/css/travelmarx.css?v=" | append: site.github.build_revision | relative_url }}">
-  </head>
-  <body>
-    <div class="wrapper custwrapper">
-      <div class="custhead">
-        <h1><a href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <h1><a class="title" href="{{ "/" | absolute_url }}">{{ site.title | default: site.github.repository_name }}</a></h1>
         
-        {% if site.logo %}
-          <img src="{{site.logo | relative_url}}" alt="Logo" />
-        {% endif %}
-        <p>{{ site.description | default: site.tagline }}</p>
-        
-        <hr/>
-        
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            {% if site.logo %}
+              <img src="{{site.logo | relative_url}}" alt="Logo" />
+            {% endif %}
+    
             <ul class="nav">
-              {% for itemLevel1 in site.data.toc.toc %}
-              <li class="{% if itemLevel1.url == page.toc_entry %}active{% endif %}"><a href="{{itemLevel1.url}}">{{itemLevel1.title}}</a>
-                  <ul>
-                  {% for itemLevel2 in itemLevel1.sections %}
-                    <li><a href="{{itemLevel1.url}}#{{itemLevel2.heading}}">{{itemLevel2.title}}</a></li>
-                      <ul>
-                        {% for itemLevel3 in itemLevel2.sections %}
-                          <li><a href="{{itemLevel1.url}}#{{itemLevel3.heading}}">{{itemLevel3.title}}</a></li>
-                        {% endfor %}
-                      </ul>
-                  {% endfor %}
-                  </ul>
-                </li>
-              {% endfor %}
+                {% for itemLevel1 in site.data.toc.toc %}
+                <li class="{% if itemLevel1.url == page.toc_entry %}active{% endif %}">
+                  <a href="{{itemLevel1.url}}">{{itemLevel1.title}}</a>
+                    <ul>
+                    {% for itemLevel2 in itemLevel1.sections %}
+                      <li><a href="{{itemLevel1.url}}#{{itemLevel2.heading}}">{{itemLevel2.title}}</a></li>
+                        <ul>
+                          {% for itemLevel3 in itemLevel2.sections %}
+                            <li><a href="{{itemLevel1.url}}#{{itemLevel3.heading}}">{{itemLevel3.title}}</a></li>
+                          {% endfor %}
+                        </ul>
+                    {% endfor %}
+                    </ul>
+                  </li>
+                {% endfor %}
+              </ul>
+
+            <hr/>
+
+            {% if site.github.is_project_page %}
+            <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
+            {% endif %}
+    
+            {% if site.github.is_user_page %}
+            <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
+            {% endif %}
+    
+            {% if site.github.is_project_page %}
+            <p class="view">This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
+            {% endif %}
+            
+            <p class="view">Site last generated on {{ site.time | date_to_string }}.</p>
+            
+            {% if site.show_downloads %}
+            <ul class="downloads">
+              <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
+              <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
+              <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
             </ul>
-        </div>
+            {% endif %}
+    
         </nav>
 
-        <hr/>
-        
-        {% if site.github.is_project_page %}
-        <p class="view"><a href="{{ site.github.repository_url }}">View the Project on GitHub <small>{{ site.github.repository_nwo }}</small></a></p>
-        {% endif %}
+        <!-- Page Content  -->
+        <div id="content">
 
-        {% if site.github.is_user_page %}
-        <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
-        {% endif %}
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
 
-        {% if site.show_downloads %}
-        <ul class="downloads">
-          <li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
-          <li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
-        </ul>
-        {% endif %}
-      </div>
-      <section class="custmain">
+                    <button type="button" id="sidebarCollapse" class="btn btn-outline-primary btn-sm">
+                        <i class="fas fa-align-left"></i>
+                        <span>Menu</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
 
-      {{ content }}
+                    {% assign prev_page = "" %}
+                    {% assign prev_url = "" %}
+                    {% assign next_page = "" %}
+                    {% assign next_url = "" %}
+                    {% assign num_toc_elem = site.data.toc.toc.size | minus: 1%}
+                    {% assign my_counter = 0 %}
+                    
+                    {% for itemLevel1 in site.data.toc.toc %}
+                        {% if itemLevel1.url == page.toc_entry %}
+                           {% if my_counter > 0 %}
+                             {% assign prev_page = last_page %}
+                             {% assign prev_url = last_url %}
+                           {% endif %}  
+                           
+                           {% if my_counter != num_toc_elem  %}
+                                {% assign my_counter = my_counter | plus: 1 %}
+                                {% assign next_page = site.data.toc.toc[my_counter].title %}
+                                {% assign next_url = site.data.toc.toc[my_counter].url %}
+                           {% endif %}                  
+                           {% break %}
+                        {% endif %}
+                    
+                        {% assign last_page = itemLevel1.title %}
+                        {% assign last_url = itemLevel1.url %}
+                        {% assign my_counter = my_counter | plus: 1 %}
+                    
+                    {% endfor %}
+    
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            {% if prev_page != "" %}
+                            {% assign prev_page = "&#xab; " | append: prev_page %}
+                            <li class="nav-item nudge">
+                                  <a role="button" class="btn btn-outline-primary btn-sm" href="{{prev_url}}">{{prev_page}}</a>
+                            </li>
+                            {% endif %}
 
-      </section>
-      <footer class="custfoot">
-        {% if site.github.is_project_page %}
-        <p>This project is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a></p>
-        {% endif %}
-        <p class="view">Site last generated on {{ site.time | date_to_string }}.</p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+                            {% if next_page != "" %}
+                            {% assign next_page = next_page | append:  " &#xbb;" %}
+                            <li class="nav-item">
+                                <a role="button" class="btn btn-outline-primary btn-sm" href="{{next_url}}">{{next_page}}</a>
+                            </li>
+                            {% endif %}
+      
+                        </ul>
+                    </div>
+              </div>
+            </nav>
+
+            {{content}}
+      
+        </div>
     </div>
-    <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
-    {% if site.google_analytics %}
-    <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-      ga('create', '{{ site.google_analytics }}', 'auto');
-      ga('send', 'pageview');
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.concat.min.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#sidebar").mCustomScrollbar({
+                theme: "minimal"
+            });
+
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar, #content').toggleClass('active');
+                $('.collapse.in').toggleClass('in');
+                $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+            });
+        });
     </script>
-    {% endif %}
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>    
-  </body>
+</body>
+
 </html>

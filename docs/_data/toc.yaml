@@ -20,13 +20,6 @@ toc:
     sections:
       - title: NoSQL
         heading: nosql
-        sections:
-          - title: Document-oriented
-            heading: document-oriented
-          - title: CRUD
-            heading: crud
-          - title: Origins
-            heading: origins
       - title: MVC
         heading: mvc
       - title: Geocode

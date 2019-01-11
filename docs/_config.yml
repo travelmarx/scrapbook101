@@ -7,7 +7,7 @@ markdown: kramdown
 plugins:
   - jemoji
 production_url: https://travelmarx.github.io/scrapbook101/
-title: Travelmarx Scrapbook 101
+title: Scrapbook 101
 theme: jekyll-theme-minimal 
 sn: Scrapbook101
-tagline: A simplified Personal Information Management System
+tagline: A simplified PIM System
