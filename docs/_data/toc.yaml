@@ -52,12 +52,14 @@ toc:
     sections:
       - title: Security
         heading: security
-      - title: Import data
-        heading: import-data
       - title: Searching
         heading: searching
       - title: Styling
         heading: styling
+      - title: Paging
+        heading: paging
+      - title: Import data
+        heading: import-data
   - title: Handling Assets
     url: handling-assets
     sections:

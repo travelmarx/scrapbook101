@@ -70,8 +70,9 @@ Paging is not currently implemented in {{site.sn}}. Paging features can be added
 
 ## Import data
 
-If you run {{site.sn}} locally and start to add entries and then decide to go-live, you can transfer your local data to your on-line data-store using the [Azure Cosmos DB Data Migration tool][migration].
+If you ran {{site.sn}} locally and start to add entries and then decide to go-live, you can transfer your local data to your on-line data-store using the [Azure Cosmos DB Data Migration tool][migration]. When using the migration tool, be sure to correctly set the **Connection String** and **Collection** fields. For example, after running the {{site.sn}} code you should have a database "Scrapbook101" with a collection "Items". These values are used in the migration tool as shown in the following screenshot.
 
+![Alt text](images/documentDB-data-migration-tool-connection.png "Document DB Data Migration Tool Connection")
 
 [gs]: get-started
 [item]: item-document
