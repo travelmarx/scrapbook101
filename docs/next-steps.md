@@ -66,7 +66,9 @@ In contrast to the CRUD pages, the {{site.sn}} main page (`Views\Item\Index.csht
 
 ## Paging
 
-Paging is not currently implemented in {{site.sn}}. Paging features can be added by modifying the search results in the `ItemController.cs` file where results are returned in the `SearchAsync` method.
+Paging is not currently implemented for {{site.sn}}. Paging features can be added by modifying the search results in the `ItemController.cs` file where results are returned in the `SearchAsync` method and returned to `Views\Item\Index.cshtml`.  
+
+Our experience running our personal version of Scrapbook with over 6000 entries and without paging is that we don't miss not having the functionality. We show one page of results for a search. If we don't find what we want, we make the search more precise or change the number of results displayed. This is sufficient for most of the searches we make so that we haven't felt the need to implement paging. Takeaway message: don't implement paging until you have other more important features like security and searching in place first.
 
 ## Import data
 
