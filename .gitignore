@@ -8,4 +8,7 @@ packages
 .vs
 **/src/bin
 **/src/obj
+**/src/Content/bootstrap*.*
+**/src/Scripts/bootstrap*.*
+
 
