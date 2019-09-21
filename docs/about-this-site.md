@@ -12,7 +12,7 @@ We started out simply by creating [this repository][this] and editing using the 
 
 We decided on the approach of using a folder named `docs` located in the master branch. See the [GitHub Pages][ghppub] docs for other choices. After seeing that we could choose a theme in our repository setting, we choose a [theme][ghptheme] and build our docs. We immediately got a decent looking site right-out-of-the-box. Behind the scenes, GitHub Pages takes what you have checked in and automatically generates your web site from any HTML or markdown files you have in the document root.
 
-So far so good, but we wondered about how we could have a table of contents (TOC) show up in the left frame of our rendered site. This led us to reading about [GitHub Pages and Jekyll][ghpjek]. Jekyll is what turns markdown files into HTML. We ended up doing following:
+So far so good, but we wondered about how we could have a table of contents (TOC) show up in the left frame of our rendered site. This led us to reading about [GitHub Pages and Jekyll][ghpjek]. Jekyll is what turns markdown files into HTML. We took the following steps:
 
 * Copy our Jekyll theme's layout `_layouts/default.html` file into our project and modify it.
 * Add custom style in `assets/css/travelmarx.css`.
@@ -52,11 +52,11 @@ After almost one hundred small commits with the GitHub user interface via a brow
 
 ## Running locally
 
-Running our site locally, enables
+Running our site locally, enables to
 
-* Editing offline and with different tools and environments. (We use [GitHub Desktop][desktop] and [Visual Studio Code][vscode].)
-* Checking in many changes at once.
-* Speeding up write-build cycle by finding and fixing build problems quicker. Errors appear in the window where you start the Jekyll process.
+* Edit offline and with different tools and environments. (We use a combination of [Git Bash][gitbash], [GitHub Desktop][desktop] and [Visual Studio Code][vscode].)
+* Check in many changes at once.
+* Speed up write-build cycle by finding and fixing build problems quicker. (Errors appear in the window where you start the Jekyll process.)
 
 For more information about running Jekyll locally, see [Setting up your GitHub Pages site locally with Jekyll][ghpjekloc]. After following the help, our site wasn't rendering correctly and we realized that while working only on-line (with the GitHub UI) our pages didn't seem to need what's called *front matter*, but locally it was needed for each page. A simple *front matter* looks like this:
 
@@ -85,9 +85,11 @@ $ bundle exec jekyll serve
 
 Notes:
 
-* You have to restart (`bundle exec jekyll serve`) to pick up changes in the `_config.yml`. For example, if you add a new site variable.
+* You have to restart (`bundle exec jekyll serve`) to pick up changes in the `_config.yml`. For example, if you add a new site variable. For other changes, you do not need to restart.
 
 * If something doesn't seem right with the build, check the build output in your Git-Bash window. This is where your big time savings comes in because you can see what the problem is right away and address it.
+
+* [bundle][bundle] is a Ruby Dependency Manager. The `exec` argument executes a script in the current bundle, in this case Jekyll gem. The `serve` option builds the site any time a source file changes and serves it locally.
 
 ## Further tweaks
 
@@ -101,11 +103,11 @@ Here is a running of list of further tweaks to our document editing and setup pr
 
 ### Add Boostrap 
 
-After running for a few weeks, we wanted to add [tabbed content][tabs] using Bootstrap. This lead us discover that there is a GitHub Page theme with [Bootstrap 4 startup site][bootstraptheme]. However, instead of using this, we ended up injecting the necessary Bootstrap scripts into the `_layouts\default.html`.
+After running this doc site for a few weeks, we wanted to add [tabbed content][tabs] using Bootstrap. This lead us discover that there is a GitHub Page theme with [Bootstrap 4 startup site][bootstraptheme]. However, instead of using this, we ended up injecting the necessary Bootstrap scripts into the `_layouts\default.html`.
 
 ### Relative Link
 
-At first we didn't notice the difference between the local URL (e.g., http://localhost:4000/index) and the live site URL (https://travelmarx.github.io/scrapbook101/index). The difference of "scrapbook101" made relative document links work locally but not live. This [SO post][sopost] pointed the way that we could specify a **baseurl**I parameter when starting Jekyll locally. We do two things:
+At first we didn't notice the difference between the local URL (e.g., http://localhost:4000/index) and the live site URL (https://travelmarx.github.io/scrapbook101/index). The difference of "scrapbook101" made relative document links work locally but not live. This [SO post][sopost] pointed the way that we could specify a **baseurl** parameter when starting Jekyll locally. We do two things:
 
   - We define any internal links without a forward slash (/).
   - We start Jekyll locally specifying a **baseurl** parameter like so <br/> `bundle exec jekyll serve --baseurl '//scrapbook101'`.
@@ -171,7 +173,7 @@ To implement a simple previous/next page control (top right corner of page), we 
 
 ### Update Layout
 
-We were inspired by the collapible sidebar navigation examples on [Bootstrapious][strapious] and created a mutant between what we had and what was suggested on Bootstrapious. The changes were made to the [Jekyll Layouts page][jek6] `_layouts\default.html`.
+We were inspired by the collapsible sidebar navigation examples on [Bootstrapious][strapious] and created a cross between what we had and what was suggested on Bootstrapious. The changes were made to the [Jekyll Layouts page][jek6] `_layouts\default.html`.
 
 
 [ghp]: https://pages.github.com/
@@ -198,3 +200,4 @@ We were inspired by the collapible sidebar navigation examples on [Bootstrapious
 [gitignore]: https://github.com/travelmarx/scrapbook101/blob/master/.gitignore
 [shopify]: https://shopify.github.io/liquid/
 [strapious]: https://bootstrapious.com/p/bootstrap-sidebar
+[bundle]: https://bundler.io/man/bundle.1.html
