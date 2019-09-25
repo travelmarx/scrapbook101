@@ -4,7 +4,7 @@ toc_entry: about-this-site
 ---
 # About this site
 
-This site was created with [GitHub Pages][ghp]. In the process of learning about GitHub Pages, we decided to also document what we learned. The GitHub Pages approach leverages Jekyll. We also have sister site to this one where we build documentation with a different technology. That site is: https://travelmarx.github.io/scrapbook101core/.
+This site was created with [GitHub Pages][ghp]. In the process of learning about GitHub Pages, we decided to also document what we learned. The GitHub Pages approach leverages Jekyll. We also have sister site to this one where we build documentation with a different technology. That site is: [travelmarx.github.io/scrapbook101core/][newsite].
 
 ## Initial steps
 
@@ -201,3 +201,4 @@ We were inspired by the collapsible sidebar navigation examples on [Bootstrapiou
 [shopify]: https://shopify.github.io/liquid/
 [strapious]: https://bootstrapious.com/p/bootstrap-sidebar
 [bundle]: https://bundler.io/man/bundle.1.html
+[newsite]: https://travelmarx.github.io/scrapbook101core/

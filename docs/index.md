@@ -8,7 +8,7 @@ This document set describes how to build a Personal Information Managment (PIM) 
 
 After building and running the code, you should have a simple {{site.sn}} site populated with ten entries and supporting assets. Note that these document pages are still a work in progress as of September 2019. 
 
-This document set covers both {{site.sn}} implemented on the .NET Framework and .NET core. There is also another documentation site (yes, we love to document!) that is built with a different technology. That sister website is https://travelmarx.github.io/scrapbook101core/.
+This document set covers both {{site.sn}} implemented on the .NET Framework and .NET core. There is also another documentation site (yes, we love to document!) that is built with a different technology. That sister website is [travelmarx.github.io/scrapbook101core/][newsite].
 
 ## A brief recap
 
@@ -29,7 +29,7 @@ Why is {{site.sn}} documented here and not on [blog.travelmarx.com][tm]? For two
 
 Creating this site was an odyssey into new tools and practices that we thought were interesting to document as well. If you want to know a little bit about how this site was created, see [About This Site][about].
 
-We also have documentation created with [docFX][docfx], which is here https://travelmarx.github.io/scrapbook101core/. Docfx enables use to build documentation like shown here (conceptual topics) along with the API documentation (which we can't with the technology used here, Jekyll).
+We also have documentation created with [docFX][docfx], which is here [travelmarx.github.io/scrapbook101core/][newsite]. Docfx enables you to build documentation like shown here (conceptual topics) along with the API documentation (which we can't with the technology used here, Jekyll).
 
 [about]: about-this-site
 [web]: https://travelmarx.github.io/scrapbook101/
@@ -39,3 +39,4 @@ We also have documentation created with [docFX][docfx], which is here https://tr
 [ghp]: https://pages.github.com/
 [doc]: https://travelmarx.github.io/scrapbook101core/
 [docfx]: https://dotnet.github.io/docfx/
+[newsite]: https://travelmarx.github.io/scrapbook101core/
