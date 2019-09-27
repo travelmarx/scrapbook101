@@ -53,7 +53,7 @@ In a relational database, the data that consitutes a {{site.sn}} item would be s
 }
 ```
 
-The two documents share common fields like **id**, **title**, **description**, and **rating** and differ on other fields that are specific to the category of the item. The {{site.sn}} [schema](/prototype-document) is a bit more complex than the book and film example above, but the idea is essentially the same. 
+The two documents share common fields like **id**, **title**, **description**, and **rating** and differ on other fields that are specific to the category of the item. The {{site.sn}} [item schema][item-document] is a bit more complex than the book and film example above, but the idea is essentially the same. 
 
 ### CRUD
 
